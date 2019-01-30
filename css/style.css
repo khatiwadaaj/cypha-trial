@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "Sketch Block";
+  src: url("../font/dahot2.Sketch_Block.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HVD Comic";
+  src: url("../font/HVD_Comic_Serif_Pro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../font/Raleway-Regular.ttf") format("truetype");
+}
+
+*,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Landing page styles with navigation bar */
+.landing-page {
+  position: relative;
+}
+
+.landing-header {
+  position: absolute;
+  width: 100%;
+  padding: 50px;
+}
+
+.visible-header {
+  z-index: 111111;
+}
+
+.brand-logo {
+  float: left;
+  width: 150px;
+  height: 50px;
+}
+
+.hamburger-icon {
+  color: #fff;
+  float: right;
+}
+
+.hamburger-icon .fa-bars {
+  font-size: 70px;
+}
+
+/* Mobile view navbar */
+#navBar {
+  background-image: url("../img/KAZ_3D_ER_HouseBackyard.jpg");
+  height: 100vh;
+  width: 70vw;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "HVD Comic", sans-serif;
+
+  /* z-index: -1; */
+}
+
+.social-icon-bar {
+  width: auto;
+  margin-top: 320px;
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+}
+
+/* Left side sticky social icons */
+.social-icon {
+  background-color: #77bc1f;
+  margin-bottom: 12px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.fab {
+  color: #fff;
+  font-size: 15px;
+}
+
+.page-description {
+  width: 34%;
+  margin-left: 200px;
+}
+
+.page-info {
+  margin-top: 140px;
+}
+
+.page-info .main-heading {
+  font-size: 6rem;
+  text-align: center;
+  font-family: "Sketch Block", sans-serif;
+  color: #ff5125;
+}
+
+.page-info .blue-heading {
+  margin-top: 30px;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.blue-heading {
+  color: #346094;
+  font-family: "HVD Comic", sans-serif;
+}
+
+.app-store-icon,
+.aboutus-icon-wrapper {
+  margin-top: 55px;
+}
+.store-icon {
+  height: 160px;
+  width: 180px;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.image-holder-right {
+  height: 120vh;
+  width: 43%;
+  margin-left: 108px;
+  position: relative;
+  z-index: -1;
+}
+
+.landing-right {
+  background-image: url("../img/Underwater-tile.jpg");
+}
+
+.landing-right img,
+.features-right img,
+.aboutus-right img {
+  position: absolute;
+  height: 540px;
+  bottom: 135px;
+  left: -52px;
+}
+
+.page-description,
+.image-holder-right,
+.social-icon-bar {
+  float: left;
+}
+
+/* features section style*/
+
+.features-info .blue-heading,
+.gameplay-info .blue-heading,
+.aboutus-info .blue-heading {
+  text-align: left;
+}
+.features-info ul,
+.aboutus-info ul {
+  list-style-position: inside;
+}
+.features-info ul li,
+.aboutus-info ul li {
+  padding-top: 15px;
+  line-height: 25px;
+  font-size: 0.9rem;
+}
+.features-right {
+  background-image: url("../img/KAZ_2D_EIW_SFW_Textures-Grass.jpg");
+}
+
+.features-right img {
+  width: 100%;
+  left: -90px;
+}
+
+/* game play section styles */
+.gameplay-right {
+  background-image: url("../img/Dino-road-texture.jpg");
+}
+
+.gameplay-info .blue-heading {
+  margin-top: 80%;
+}
+.aboutus-right {
+  background-image: url("../img/tropical-sand.jpg");
+}
+
+.aboutus-sm-img {
+  display: inline-block;
+}
+
+/* Clearfix for floating element */
+.aboutus-section:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* footer section styles */
+
+footer {
+  background-image: url("../img/KAZ_2DEIW_SWTextures_02.jpg");
+  height: auto;
+}
+.footer-top-wrapper {
+  text-align: center;
+}
+.footer-icon-wrapper {
+  display: inline-block;
+  margin-top: 150px;
+}
+.footer-icon-wrapper img {
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer-store-icon {
+  display: flex;
+  margin-top: 30px;
+}
+
+.footer-store-icon img {
+  height: 160px;
+  box-sizing: border-box;
+}
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.back-to-top h2 a {
+  color: #fff;
+  font-family: "HVD Comic", sans-serif;
+}
+
+.footer-bottom {
+  font-size: 0.6rem;
+  margin-top: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.made-by {
+  text-transform: uppercase;
+  font-weight: 900;
+}
